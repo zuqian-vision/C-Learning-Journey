@@ -9,7 +9,7 @@ My first step into programming.
     *(使用自定义函数重构的成绩统计器，实现了模块化)*
 *   **for_test.c**: Practices for `for` loops.
     *(for循环与嵌套循环练习)*
-    * **03-Pointer-and-Memory**: Learned C pointers, array-pointer relationship, and dynamic memory allocation (malloc/free).
+    **03-Pointer-and-Memory**: Learned C pointers, array-pointer relationship, and dynamic memory allocation (malloc/free).
 
 ##  Learning Goals (学习目标)
 - Master C core syntax. *(掌握 C 语言核心语法)*
