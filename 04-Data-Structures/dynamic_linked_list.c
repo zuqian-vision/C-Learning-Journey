@@ -31,5 +31,48 @@ while(current!=NULL){
 	printf("ID:%d\n",current->id);
 	current=current->next; 
 }
+int target_id;
+printf("输入要查找的学号:");
+scanf("%d",&target_id);
+struct Node *temp=head;
+int is_found=0;
+while(temp!=NULL){
+	if(temp->id==target_id){
+		is_found=1;
+		printf("%d",temp->id);
+		break;
+	}
+	temp=temp->next;
+}
+if(is_found==0){
+	printf("无");
+}
+int found_id;
+printf("输入要删除的id:");
+scanf("%d",&found_id);
+struct Node *num=head;
+struct Node *prev=NULL;
+while(num!=NULL){
+	if(found_id!=num->id){
+		prev=num;
+		num=num->next;
+	}
+	else{
+		if(prev==NULL){
+			head=num->next;
+			free(num);
+			break;
+		}
+		else if(prev!=NULL){
+			prev->next=num->next;
+			free(num);
+			break;
+		}
+	}
+	num=num->next;
+}
+if(num==NULL){
+	printf("无");
+	}
 return 0;
 }
