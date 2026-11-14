@@ -69,7 +69,6 @@ while(num!=NULL){
 			break;
 		}
 	}
-	num=num->next;
 }
 if(num==NULL){
 	printf("нч");
